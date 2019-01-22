@@ -1,0 +1,27 @@
+package algorithem;
+
+import java.util.Scanner;
+
+/*
+	별찍기 프로그럄
+	입력한 수 n만큼 n번째 줄마다 1 ~ n개의 별을 각각 찍는다.
+	2019-1-22
+ */
+
+public class Main {
+	public static void main(String args[]) {
+		int n;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자를 입력하시오");
+		n = Integer.parseInt(scan.nextLine());
+		System.out.println("[별찍기 프로그램 가동]");
+		for (int i = 1; i <= n; i++) {
+			for (int j = 0; j < i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}
